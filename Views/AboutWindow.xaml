@@ -1,0 +1,18 @@
+<Window x:Class="MasrAccounts.Views.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="حول البرنامج"
+        Height="300" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="🍓 أحمد حسين لحسابات الفراولة" FontSize="20" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 10"/>
+            <TextBlock Text="الإصدار: v1" FontSize="14" TextAlignment="Center"/>
+            <TextBlock Text="المطور: م. أحمد محمد حسين" FontSize="14" TextAlignment="Center"/>
+            <TextBlock Text="📧 ahmed.m.kotb1@gmail.com" FontSize="14" TextAlignment="Center" Margin="0 10"/>
+            <TextBlock Text="📞 01555560207 - 01096169187" FontSize="14" TextAlignment="Center"/>
+            <TextBlock Text="© جميع الحقوق محفوظة 2025" FontSize="12" TextAlignment="Center" Margin="10 0 0 0"/>
+            <Button Content="إغلاق" Click="Close_Click" Width="80" Margin="0 20 0 0" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>

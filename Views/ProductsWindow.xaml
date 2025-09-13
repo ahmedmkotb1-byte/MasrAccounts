@@ -1,0 +1,24 @@
+<Window x:Class="MasrAccounts.ProductsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="الأصناف" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="اسم الصنف"/>
+            <TextBox x:Name="ProductNameBox" Margin="0 5"/>
+
+            <TextBlock Text="سعر الوحدة"/>
+            <TextBox x:Name="PriceBox" Margin="0 5"/>
+
+            <Button Content="إضافة صنف" Click="AddProduct_Click" Margin="0 5"/>
+            <Button Content="تعديل الصنف المحدد" Click="EditProduct_Click" Margin="0 5"/>
+            <Button Content="حذف الصنف المحدد" Click="DeleteProduct_Click" Margin="0 5"/>
+
+            <TextBlock Text="بحث عن صنف" Margin="10 10 0 0"/>
+            <TextBox x:Name="SearchBox" Margin="0 5" TextChanged="SearchBox_TextChanged"/>
+
+            <ListBox x:Name="ProductsList" Margin="0 10"/>
+        </StackPanel>
+    </Grid>
+</Window>

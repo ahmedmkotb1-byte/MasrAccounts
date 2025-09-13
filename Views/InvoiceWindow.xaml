@@ -1,0 +1,23 @@
+<Window x:Class="MasrAccounts.InvoiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="فاتورة جديدة" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="العميل"/>
+            <ComboBox x:Name="ClientCombo" Margin="0 5"/>
+
+            <TextBlock Text="الصنف"/>
+            <ComboBox x:Name="ProductCombo" Margin="0 5"/>
+
+            <TextBlock Text="الوزن (كجم)"/>
+            <TextBox x:Name="WeightBox" Margin="0 5"/>
+
+            <Button Content="حساب السعر" Click="CalculatePrice_Click" Margin="0 10"/>
+            <Button Content="طباعة آخر فاتورة" Click="PrintLastInvoice_Click" Margin="0 0 10 0"/>
+
+            <TextBlock x:Name="ResultText" FontSize="16" FontWeight="Bold" TextAlignment="Center" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>

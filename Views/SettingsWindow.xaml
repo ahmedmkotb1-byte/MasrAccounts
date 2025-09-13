@@ -1,0 +1,17 @@
+<Window x:Class="MasrAccounts.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="الإعدادات" Height="250" Width="350"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="اسم المستخدم الجديد"/>
+            <TextBox x:Name="UsernameBox" Margin="0 5"/>
+
+            <TextBlock Text="كلمة المرور الجديدة"/>
+            <PasswordBox x:Name="PasswordBox" Margin="0 5"/>
+
+            <Button Content="حفظ التغييرات" Click="SaveSettings_Click" Margin="0 10"/>
+        </StackPanel>
+    </Grid>
+</Window>
